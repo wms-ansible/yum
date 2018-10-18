@@ -1,0 +1,2 @@
+localhost ansible-ssh-host=127.0.0.1 ansible-ssh-user=root ansible-ssh-pass=123456
+

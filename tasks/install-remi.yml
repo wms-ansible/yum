@@ -1,0 +1,12 @@
+---
+- name: 导入Remi GPG秘钥
+  rpm_key:
+    key: "{{item.key}}"
+    state: present
+  with_items: "{{gpg_keys}}"
+- name: 安装 Remi.repo
+  command: "rpm -Uvh --force {{item.rpm_url}} creates={{item.repo_name}}"
+  with_items: "{{repos}}"
+  
+# command模块
+# creates参数： 如果creates文件存在，不执行command命令，如果不存在，执行command命令

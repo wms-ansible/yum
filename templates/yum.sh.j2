@@ -1,0 +1,9 @@
+#!/bin/bash
+# 导入Remi GPG秘钥
+wget http://rpms.remirepo.net/RPM-GPG-KEY-remi -O /etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+
+# 安装Remi源
+rpm -Uvh --quit http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+
+# 安装epel源
+yum -y install epel-release

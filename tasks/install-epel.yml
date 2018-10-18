@@ -1,0 +1,5 @@
+---
+- name: 安装epel源
+  yum:
+    name: epel-release
+    state: present

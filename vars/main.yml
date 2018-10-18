@@ -1,0 +1,16 @@
+---
+# remi_gpg_key: http://rpms.remirepo.net/RPM-GPG-KEY-remi
+# remi_rpm_url: http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+# remi_repo_name: /etc/yum.repos.d/remi.repo
+
+# gpg秘钥
+gpg_keys:
+  - name: Remi
+    key: http://rpms.remirepo.net/RPM-GPG-KEY-remi
+
+
+# repo源
+repos:
+  - name: Remi
+    rpm_url: http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    repo_name: /etc/yum.repos.d/remi.repo
