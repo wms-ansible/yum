@@ -1,6 +1,6 @@
 galaxy_info:
   author: wms_ansible
-  description: yum源安装
+  description: yum源安装epel/remi
   company: your company (optional)
 
   # If the issue tracker for your role is not on github, uncomment the
